@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICCuse · 工具驱动的创造者</title>
+<meta name="description" content="ICCuse 的个人主页：用 AI 工具做研究、做产品、做插件。">
+<style>
+  :root {
+    --bg: #fafafa;
+    --card: #ffffff;
+    --ink: #1a1a2e;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --border: #e5e7eb;
+    --radius: 12px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 48px 24px 64px; }
+  header { margin-bottom: 40px; }
+  h1 { font-size: 2.2rem; letter-spacing: -0.02em; }
+  .tagline { color: var(--muted); margin-top: 8px; font-size: 1.05rem; }
+  .bio { margin-top: 20px; color: #374151; }
+  section { margin-top: 40px; }
+  h2 { font-size: 1.25rem; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+    display: block;
+  }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+  .card h3 { font-size: 1.05rem; color: var(--accent); }
+  .card .badge { display: inline-block; font-size: 0.72rem; background: #eef2ff; color: #4338ca; padding: 2px 8px; border-radius: 999px; margin-bottom: 8px; }
+  .card p { color: var(--muted); font-size: 0.9rem; margin-top: 8px; }
+  .pill { display: inline-block; font-size: 0.75rem; background: #f3f4f6; color: #4b5563; padding: 2px 10px; border-radius: 999px; margin: 2px 4px 0 0; }
+  footer { margin-top: 56px; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--border); padding-top: 16px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>ICCuse</h1>
+    <div class="tagline">用 AI 工具做研究、做产品、做插件的人。</div>
+    <div class="bio">
+      相信"因果优先框架"：世界是动态的因果事件网络。把这句话变成数学实验、变成产品、
+      变成给 DeepSeek Harness 写的一整套插件——代码由 AI 辅助生成，方向由人决定。
+    </div>
+  </header>
+
+  <section>
+    <h2>项目</h2>
+    <div class="grid">
+
+      <a class="card" href="https://github.com/ICCuse/zanjimiao">
+        <span class="badge">已上线产品</span>
+        <h3>攒机喵</h3>
+        <p>微信小程序 · 台式电脑配置助手：兼容性检查、方案管理、AI 推荐。全部代码 AI 辅助生成，从零到上线 3 个月。</p>
+        <span class="pill">微信小程序</span><span class="pill">云开发</span>
+      </a>
+
+      <a class="card" href="https://github.com/ICCuse/prime-causal-convergence">
+        <span class="badge">研究</span>
+        <h3>S(N) · 素数因果收敛</h3>
+        <p>S(N)：素数分布对 Li(x) 理想灯塔的因果收敛度量。10⁴→10¹⁰ 共 16 点，效应量 899.91σ，双外推 S_∞≈0.72–0.75。</p>
+        <span class="pill">Python</span><span class="pill">数论</span><span class="pill">因果范式</span>
+      </a>
+
+      <a class="card" href="https://github.com/ICCuse/dsh-compaction-shield">
+        <span class="badge">DSH 插件</span>
+        <h3>dsh-compaction-shield</h3>
+        <p>压缩盾：让上下文压缩在构造上无损——压缩前把关键锚点自动存档进会话笔记。</p>
+        <span class="pill">DeepSeek Harness</span>
+      </a>
+
+      <a class="card" href="https://github.com/ICCuse/dsh-knowledge">
+        <span class="badge">DSH 插件</span>
+        <h3>dsh-knowledge</h3>
+        <p>全局知识库桥：让 DSH 与 Codex 共享同一份 Markdown 知识库，跨工具长期记忆。</p>
+      </a>
+
+      <a class="card" href="https://github.com/ICCuse/dsh-pain-point-check">
+        <span class="badge">DSH 插件</span>
+        <h3>dsh-pain-point-check</h3>
+        <p>反钻牛角尖：连续 2 个实验未收敛时强制回到痛点，答完三问才能继续。</p>
+      </a>
+
+      <a class="card" href="https://github.com/ICCuse/dsh-premise-guard">
+        <span class="badge">DSH 插件</span>
+        <h3>dsh-premise-guard</h3>
+        <p>压缩丢锚点告警：摘要丢掉关键路径/数值/错误码时，注入一次性提醒。</p>
+      </a>
+
+      <a class="card" href="https://github.com/ICCuse/dsh-file-memory">
+        <span class="badge">DSH 插件</span>
+        <h3>dsh-file-memory</h3>
+        <p>文件型工作记忆：memorize/recall 把关键前提逐字保存，无损挺过压缩。</p>
+      </a>
+
+      <a class="card" href="https://github.com/ICCuse/dsh-web-safe">
+        <span class="badge">工具</span>
+        <h3>dsh-web-safe</h3>
+        <p>dsh web 启动预检：坏插件产物早发现、恢复指引 + "你的数据没丢"。</p>
+      </a>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>世界观</h2>
+    <p style="color:#374151">
+      因果优先框架（工作假设）：时空、物质、引力、量子都是动态因果事件网络的涌现投影。
+      先看连接再看对象；找代价函数理解系统状态；警惕尺度错配；知识是耦合不是符合——具体预言保持验证纪律。
+    </p>
+  </section>
+
+  <footer>
+    <a href="https://github.com/ICCuse">github.com/ICCuse</a> ·
+    DeepSeek Harness 插件套件 · 2026
+  </footer>
+
+</div>
+</body>
+</html>
